@@ -1,0 +1,229 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+
+<body>
+<table border="1" cellpadding="0" width="100%">
+  <tr>
+    <td colspan="6"><p align="center"><strong>7</strong><strong>、8号炉MFT保护清单</strong></p></td>
+  </tr>
+  <tr>
+    <td><p align="center">序号&nbsp; </p></td>
+    <td><p align="center">描 述 </p></td>
+    <td><p align="center">信号源 </p></td>
+    <td><p align="center">定值 </p></td>
+    <td><p align="center">构成方式 </p></td>
+    <td><p align="center">延时 </p></td>
+  </tr>
+  <tr>
+    <td><p align="center">&nbsp;</p>
+      <p align="center">1 </p></td>
+    <td><p align="center">锅炉MFT-按钮1/2/3 </p></td>
+    <td><p align="center">70HYY00GS0013<br>
+      70HYY00GS0014<br>
+      70HYY00GS0012 </p></td>
+    <td></td>
+    <td><p align="center">两个开关三副信号 3取2 </p></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td rowspan="4"><p align="center">2 </p></td>
+    <td rowspan="4"><p align="center">主蒸汽压力高 </p></td>
+    <td><p align="center">70LBA01CP101<br>
+      70LBA01CP001<br>
+      70LBA01CP002 </p></td>
+    <td><p align="center">＞30.56MPa </p></td>
+    <td rowspan="4"><p align="center">锅炉侧过热器A侧或B侧出口蒸汽压力高（每侧3取2）与上汽机侧A侧或B侧主蒸汽压力高（每侧3取2） </p></td>
+    <td rowspan="4"><p align="center">3s </p></td>
+  </tr>
+  <tr>
+    <td><p align="center">70LBA02CP101<br>
+      70LBA02CP001<br>
+      70LBA02CP002 </p></td>
+    <td><p align="center">＞30.56MPa </p></td>
+  </tr>
+  <tr>
+    <td><p align="center">70LBA11CP101<br>
+      70LBA11CP102<br>
+      70LBA11CP103 </p></td>
+    <td><p align="center">＞29.56MPa </p></td>
+  </tr>
+  <tr>
+    <td><p align="center">70LBA21CP101<br>
+      70LBA21CP102<br>
+      70LBA21CP103 </p></td>
+    <td><p align="center">＞29.56MPa </p></td>
+  </tr>
+  <tr>
+    <td><p align="center">3 </p></td>
+    <td><p align="center">炉膛烟气压力高高1/2/3 </p></td>
+    <td><p align="center">70HBK10CP001<br>
+      70HBK10CP002<br>
+      70HBK10CP003 </p></td>
+    <td><p align="center">＞3.5kPa </p></td>
+    <td><p align="center">开关量 3取2 </p></td>
+    <td><p align="center">3s </p></td>
+  </tr>
+  <tr>
+    <td><p align="center">4 </p></td>
+    <td><p align="center">炉膛烟气压力低低1/2/3 </p></td>
+    <td><p align="center">70HBK10CP004<br>
+      70HBK10CP005<br>
+      70HBK10CP006 </p></td>
+    <td><p align="center">＜-3.5kPa </p></td>
+    <td><p align="center">开关量 3取2 </p></td>
+    <td><p align="center">3s </p></td>
+  </tr>
+  <tr>
+    <td><p align="center">5 </p></td>
+    <td><p align="center">给水泵全停 </p></td>
+    <td><p align="center">70MEHA19DCS<br>
+      70MEHA03DCS<br>
+      70MEHA04DCS<br>
+      70MEHB19DCS<br>
+      70MEHB03DCS<br>
+      70MEHB04DCS </p></td>
+    <td></td>
+    <td><p align="center">给水泵A停运（3取2）与上给水泵B停运（3取2） </p></td>
+    <td><p align="center">1s </p></td>
+  </tr>
+  <tr>
+    <td><p align="center">6 </p></td>
+    <td><p align="center">给水流量低低 </p></td>
+    <td><p align="center">70LAB52CF101<br>
+      70LAB52CF102<br>
+      70LAB52CF103 </p></td>
+    <td><p align="center">＜542t/h </p></td>
+    <td><p align="center">锅炉处于运行状态，给水流量模拟量小于542t/h，转开关量，3取2 </p></td>
+    <td><p align="center">30s </p></td>
+  </tr>
+  <tr>
+    <td><p align="center">7 </p></td>
+    <td><p align="center">全炉膛灭火 </p></td>
+    <td></td>
+    <td></td>
+    <td><p align="center">任一煤层运行过，所有层煤火检失去和所有层油火检失去（煤、油层火检失去判据为：任一切圆中2个火检失去） </p></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><p align="center">8 </p></td>
+    <td><p align="center">全燃料丧失 </p></td>
+    <td></td>
+    <td></td>
+    <td><p align="center">给煤机全停，且（任一油阀开过或微油模式投入过），且（所有油阀关闭、OFT、燃油快关阀关闭三者相或） </p></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td rowspan="2"><p align="center">9 </p></td>
+    <td rowspan="2"><p align="center">汽机跳闸 </p></td>
+    <td><p align="center">70TURBTRIP、SELMW <br>
+      （DEH中总跳闸出口，输出三路汽机跳闸信号：X0MAY01EZ001A_XK46 X0MAY01EZ001B_XK46 X0MAY01EZ001C_XK46） </p></td>
+    <td></td>
+    <td><p align="center">发电机功率大于30%时汽机遮断系统遮断（3取2） </p></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><p align="center">70TURBTRIP<br>
+      70LBF20AA0019、SELMW <br>
+      70HPCLTOMFT-R </p></td>
+    <td></td>
+    <td><p align="center">发电机功率小于30%时汽机遮断系统遮断（3取2）、高旁阀位小于3%或全关 </p></td>
+    <td><p align="center">延时10s发15s脉冲 </p></td>
+  </tr>
+  <tr>
+    <td><p align="center">10 </p></td>
+    <td><p align="center">火检冷却风压力 </p></td>
+    <td><p align="center">70HHQ20CP101 <br>
+      70HHQ20CP102 <br>
+      70HHQ20CP103 </p></td>
+    <td><p align="center">＜3kPa </p></td>
+    <td><p align="center">模拟量判断后3取2 </p></td>
+    <td><p align="center">1500s </p></td>
+  </tr>
+  <tr>
+    <td><p align="center">11 </p></td>
+    <td><p align="center">风量低 </p></td>
+    <td><p align="center">70HHL10CF101 <br>
+      70HHL10CF102 <br>
+      70HHL10CF103 <br>
+      70HHL20CF101 <br>
+      70HHL20CF102 <br>
+      70HHL20CF103 </p></td>
+    <td><p align="center">＜25% </p></td>
+    <td><p align="center">总风量经判断后转换成开关量信号，3取2 </p></td>
+    <td><p align="center">20s </p></td>
+  </tr>
+  <tr>
+    <td><p align="center">12 </p></td>
+    <td><p align="center">送风机全停 </p></td>
+    <td><p align="center">70HLB30AN0013B/C/D &nbsp;70HLB40AN0013B/C/D </p></td>
+    <td></td>
+    <td><p align="center">送A停运（3取2）与上送B停运（3取2） </p></td>
+    <td><p align="center">1s </p></td>
+  </tr>
+  <tr>
+    <td><p align="center">13 </p></td>
+    <td><p align="center">引风机全停 </p></td>
+    <td><p align="center">70HNC20AN0013B/C/D &nbsp;70HNC10AN0013B/C/D </p></td>
+    <td></td>
+    <td><p align="center">引A停运（3取2）与上引B停运（3取2） </p></td>
+    <td><p align="center">1s </p></td>
+  </tr>
+  <tr>
+    <td><p align="center">14 </p></td>
+    <td><p align="center">吸收塔再循环泵全停（运行取非、电流小于5A),吸收塔出口温度大于80℃，机组负荷大于300MW，延时90秒 </p></td>
+    <td><p align="center">70HTF11AP0013-1/2/3 <br>
+      70HTF12AP0013-1/2/3 <br>
+      70HTF13AP0013-1/2/3 <br>
+      70HTF14AP0013-1/2/3 <br>
+      70HTA40CT101A <br>
+      70HTA40CT102A <br>
+      70HTA40CT103A <br>
+      70HTF11AP0019 <br>
+      70HTF12AP0019 <br>
+      70HTF13AP0019 <br>
+      70HTF14AP0019 </p></td>
+    <td></td>
+    <td><p align="center">负荷大于30%,浆液循环泵全部停运，吸收塔出口温度高（温度3取2） </p></td>
+    <td><p align="center">90s </p></td>
+  </tr>
+  <tr>
+    <td><p align="center">15 </p></td>
+    <td><p align="center">两台增压风机跳闸 </p></td>
+    <td><p align="center">71HTC10AN0013-1/2/3 <br>
+      72HTC10AN0013-1/2/3 <br>
+      70HTA20AA1019 <br>
+      70HTA20AA1029 </p></td>
+    <td></td>
+    <td><p align="center">增压风机A停运（3取2）与上增压风机B停运（3取2）再与上增压风机上、下旁路挡板反馈均小于80% </p></td>
+    <td><p align="center">3s </p></td>
+  </tr>
+  <tr>
+    <td rowspan="3"><p align="center">16 </p></td>
+    <td rowspan="3"><p align="center">再热器保护 </p></td>
+    <td><p align="center">70MAA11FG051/70MAA12FG051 <br>
+      70MAA22FG051/70MAA21FG051 <br>
+      70HPCLTOMFT </p></td>
+    <td></td>
+    <td rowspan="3"><p align="center">修正后的BUT总燃料值大于117，蒸汽通道闭锁（高旁全关时1/2号主汽门全关或低旁A/B全关时1/2号再热汽门全关）。 </p></td>
+    <td rowspan="3"><p align="center">10s </p></td>
+  </tr>
+  <tr>
+    <td><p align="center">70MAB11FG051/70MAB22FG051 <br>
+      70MAB12FG051/70MAB21FG051 <br>
+      70LPACLTOMFT/70LPBCLTOMFT </p></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><p align="center">经BTU修正后总<br>
+      燃料量TFF </p></td>
+    <td><p align="center">＞117 </p></td>
+  </tr>
+</table>
+<p align="left">&nbsp;</p>
+<p align="left">&nbsp;</p>
+</body>
+</html>

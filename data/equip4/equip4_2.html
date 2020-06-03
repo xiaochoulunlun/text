@@ -1,0 +1,185 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+
+<body>
+<table border="1" cellpadding="0" width="100%">
+  <tr>
+    <td colspan="6"><p align="center"><strong>5</strong><strong>、6号炉MFT保护清单</strong></p></td>
+  </tr>
+  <tr>
+    <td><p align="center">序号&nbsp; </p></td>
+    <td><p align="center">描 述 </p></td>
+    <td><p align="center">信号源 </p></td>
+    <td><p align="center">定值 </p></td>
+    <td><p align="center">构成方式 </p></td>
+    <td><p align="center">延时 </p></td>
+  </tr>
+  <tr>
+    <td><p align="center">1 </p></td>
+    <td><p align="center">汽机跳闸 </p></td>
+    <td><p align="center">5PS5451A <br>
+      5PS5451B <br>
+      5PS5451C </p></td>
+    <td><p align="center">≤6.89MPa </p></td>
+    <td><p align="center">1、汽机跳闸压力开关三取二且发电机功率大于30% <br>
+      2、汽机跳闸压力开关三取二且发电机功率小于30%且高旁压力调节阀反馈≤3% </p></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><p align="center">2 </p></td>
+    <td><p align="center">两台送风机均跳闸 </p></td>
+    <td><p align="center">5MO1521A-3 <br>
+      5MO1521B-3 </p></td>
+    <td></td>
+    <td><p align="center">送风机A/B运行信号（SOE）取非相与 </p></td>
+    <td><p align="center">1s </p></td>
+  </tr>
+  <tr>
+    <td><p align="center">3 </p></td>
+    <td><p align="center">两台引风机均跳闸 </p></td>
+    <td><p align="center">5MO1621A-3 <br>
+      5MO1621B-3 </p></td>
+    <td></td>
+    <td><p align="center">引风机A/B运行信号（SOE）取非相与 </p></td>
+    <td><p align="center">1s </p></td>
+  </tr>
+  <tr>
+    <td><p align="center">4 </p></td>
+    <td><p align="center">汽包水位HH </p></td>
+    <td><p align="center">5LT0901-COM <br>
+      5LT0902-COM <br>
+      5LT0903-COM </p></td>
+    <td><p align="center">＞250mm </p></td>
+    <td><p align="center">模拟量经定值判断后转换成开关量，3取2 </p></td>
+    <td><p align="center">5s </p></td>
+  </tr>
+  <tr>
+    <td><p align="center">5 </p></td>
+    <td><p align="center">汽包水位LL </p></td>
+    <td><p align="center">5LT0901-COM <br>
+      5LT0902-COM <br>
+      5LT0903-COM </p></td>
+    <td><p align="center">＜-300mm </p></td>
+    <td><p align="center">模拟量经定值判断后转换成开关量，3取2 </p></td>
+    <td><p align="center">5s </p></td>
+  </tr>
+  <tr>
+    <td><p align="center">6 </p></td>
+    <td><p align="center">炉膛压力HH </p></td>
+    <td><p align="center">5PS1613 <br>
+      5PS1616 <br>
+      5PS1618 </p></td>
+    <td><p align="center">＞3.24kPa </p></td>
+    <td><p align="center">开关量 3取2 </p></td>
+    <td><p align="center">2s </p></td>
+  </tr>
+  <tr>
+    <td><p align="center">7 </p></td>
+    <td><p align="center">炉膛压力LL </p></td>
+    <td><p align="center">5PS1614 <br>
+      5PS1615 <br>
+      5PS1617 </p></td>
+    <td><p align="center">＜-2.49kPa </p></td>
+    <td><p align="center">开关量 3取2 </p></td>
+    <td><p align="center">2s </p></td>
+  </tr>
+  <tr>
+    <td><p align="center">8 </p></td>
+    <td><p align="center">手动MFT </p></td>
+    <td><p align="center">5LC01DCS <br>
+      5LC14DCS <br>
+      5LC15DCS </p></td>
+    <td></td>
+    <td><p align="center">两个按钮三副触点3取2 </p></td>
+    <td><p align="center">2s脉冲 </p></td>
+  </tr>
+  <tr>
+    <td><p align="center">9 </p></td>
+    <td><p align="center">火检冷却风压力LLL </p></td>
+    <td><p align="center">5PDT1523 <br>
+      5PDT1524 <br>
+      5PDT1525 </p></td>
+    <td><p align="center">＜4.5kPa </p></td>
+    <td><p align="center">模拟量经定值判断后转换成开关量，3取2 </p></td>
+    <td><p align="center">1500s </p></td>
+  </tr>
+  <tr>
+    <td><p align="center">10 </p></td>
+    <td><p align="center">锅炉总风量 ＜25% </p></td>
+    <td></td>
+    <td><p align="center">＜25% </p></td>
+    <td><p align="center">一、二次风量总和小于25%，转换成开关量信号，3取2 </p></td>
+    <td><p align="center">2s </p></td>
+  </tr>
+  <tr>
+    <td><p align="center">11 </p></td>
+    <td><p align="center">主燃料跳闸 </p></td>
+    <td></td>
+    <td></td>
+    <td><p align="center">没有给煤机运行证实，且（任一油阀开过或微油模式投入过），且（所有油阀关、OFT)、燃油快关阀关闭三者相或） </p></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><p align="center">12 </p></td>
+    <td><p align="center">全炉膛灭火 </p></td>
+    <td></td>
+    <td></td>
+    <td><p align="center">任一给煤机运行120s后所有层火检失去（层火检失去：2/4失去） </p></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><p align="center">13 </p></td>
+    <td><p align="center">丧失一次风 </p></td>
+    <td></td>
+    <td></td>
+    <td><p align="center">没有油层运行，任一给煤机运行证实，两台一次风机均不运行（SOE信号） </p></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td rowspan="2"><p align="center">14 </p></td>
+    <td rowspan="2"><p align="center">炉水泵跳闸 </p></td>
+    <td><p align="center">5MO0901A-3<br>
+      5MO0901B-3<br>
+      5MO0901C-3 </p></td>
+    <td></td>
+    <td><p align="center">三台炉水泵运行相或再取非 </p></td>
+    <td><p align="center">5s </p></td>
+  </tr>
+  <tr>
+    <td><p align="center">5PDT0901A/B/C<br>
+      5PDT0902A/B/C </p></td>
+    <td><p align="center">＜81.4kPa </p></td>
+    <td><p align="center"><br>
+      三台泵中每台泵均有一个进出口差压低 </p></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><p align="center">15 </p></td>
+    <td><p align="center">BMS电源失去 </p></td>
+    <td><p align="center">PCU14机柜电源失去 </p></td>
+    <td></td>
+    <td><p align="center">没有MFT条件时MFT继电器动作（3取2） </p></td>
+    <td><p align="center">1s </p></td>
+  </tr>
+  <tr>
+    <td><p align="center">16 </p></td>
+    <td><p align="center">FGD请求MFT(机组负荷大于150MW，吸收塔再循环泵非运行信号且电流小于5A，且吸收塔出口温度＞80℃（三取二），延时90秒 </p></td>
+    <td><p align="center">50HTF14AP001RN1/2/3 <br>
+      50FGD120DCS <br>
+      5TF13K001RN1/2/3/5 <br>
+      5TF12K001RN1/2/3/5 <br>
+      5TF11K001RN1/2/3/5 <br>
+      5TA30CT101B <br>
+      5TA30CT102B <br>
+      5TA30CT103B </p></td>
+    <td><p align="center">＞80℃ </p></td>
+    <td><p align="center">负荷大于150MW,浆液循环泵全部停运，吸收塔出口温度高（温度3取2） </p></td>
+    <td><p align="center">90s </p></td>
+  </tr>
+</table>
+</body>
+</html>
